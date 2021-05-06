@@ -1,0 +1,39 @@
+body {
+  background: #0f0f0f;
+  color: white;
+}
+
+.box {
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #232323;
+  padding: 3%;
+  margin: 10vh 7vw;
+  text-align: center;
+}
+
+.col > h1,
+.col > h2,
+.col > h3 {
+  max-width: 160px;
+}
+
+.poster {
+  width: 140px;
+}
+
+hr {
+  background: white;
+}
