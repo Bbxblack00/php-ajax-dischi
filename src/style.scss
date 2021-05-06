@@ -1,0 +1,38 @@
+body {
+  background: rgb(15, 15, 15);
+  color: white;
+}
+.box {
+  margin: 10px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col {
+  content: "";
+  display: table;
+  clear: both;
+
+  background-color: rgb(35, 35, 35);
+
+  padding: 3%;
+
+  margin: 10vh 7vw;
+
+  text-align: center;
+}
+
+.col > h1,
+.col > h2,
+.col > h3 {
+  max-width: 160px;
+}
+.poster{
+  width: 140px;
+}
+hr {
+  background: white;
+}
