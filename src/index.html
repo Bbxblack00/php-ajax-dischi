@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesame -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- vue 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <style>
+        body {
+          background: rgb(55, 55, 55);
+          color: white;
+        }
+        .box {
+          margin: 10px;
+        }
+        .container{
+
+        }
+        .poster{
+          width: 140px;
+        }
+        hr {
+          background: white;
+        }
+    </style>
+    <script src="script.js"></script>
+    <title>PHP</title>
+</head>
+<body>
+
+  <!-- Attraverso l'utilizzo di Axios: al caricamento
+  della pagina axios chiederà attraverso una
+  chiamata API i dischi a php e li stamperà
+  attraverso vue. -->
+
+
+    <div id="app" class="container">
+            <div v-for="disk in disks" class="col">
+
+              <h1>{{ disk.title }}</h1>
+
+              <img v-bind:src="disk.poster" class="poster">
+
+              <h2>{{ disk.author }}</h2>
+
+              <h3>{{ disk.genre }}</h3>
+
+              <h2>{{ disk.year }}</h2>
+
+            </div>
+    </div>
+</html>
