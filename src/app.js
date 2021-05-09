@@ -3,7 +3,7 @@ function init() {
         el: "#app",
         data: {
             'hello': 'Hello World',
-            disk: [],
+            disks: [],
             // dskPoster: '',
             // dskTitle: '',
             // dskGenre: '',
